@@ -1,0 +1,12 @@
+.versus {
+  width: 200px;
+}
+.versuse {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  display: flex;
+}
+.nameTag {
+  margin-left: 120px;
+}

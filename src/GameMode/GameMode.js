@@ -4,13 +4,13 @@ import { useHistory } from "react-router-dom";
 
 export default function GameMode({ name }) {
   const history = useHistory();
+  const names = history.location.state;
   const EnterGame = () => {
-    history.push("/game");
+     history.push("/vs", names);
   };
   return (
     <div className="body">
       <ul>
-        <h1>{name}</h1>
         <li onClick={EnterGame}>
           <span>EASIER</span>
         </li>
